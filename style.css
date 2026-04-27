@@ -7,7 +7,7 @@ box-sizing: 0;
 }
 
 body {
-background-color: rgb(196, 175, 255);
+background-color: rgb(175, 207, 255);
 color: black;
 display: flex;
 justify-content: center;
@@ -18,7 +18,7 @@ align-items: center;
 background: rgb(203, 217, 255);
 display: flex;
 flex-direction: column;
-width: 380px;
+width: 500px;
 height: 500px;
 padding: 15px;
 border-radius: 15px;
@@ -36,7 +36,7 @@ text-align: center;
 }
 
 nav {
-border-top: 2px solid rgb(17, 21, 48);
+border-top: 2px solid rgb(0, 0, 0);
 display: flex;
 align-items: center;
 padding: 10px;
@@ -50,20 +50,34 @@ min-height:100vh;
 width:100%;
 overflow-wrap : break-word;
 word-wrap : break-word;
-font-size : 18px;/*m*/
+font-size : 19px;/*m*/
 }
 
 button{
 width:80px;/*m*/
 height:80px;
-background:radial-gradient(circle,rgb(245, 235, 255),rgb(253, 234, 255));/*m*/
+background:radial-gradient(circle,rgb(255, 255, 255),rgb(255, 255, 255));/*m*/
 border-radius:50%;
 border:none;
 cursor:pointer;
 margin-top:auto;
-color:rgb(59, 90, 90);/*m*/
+color:rgb(162, 168, 185);/*m*/
 transition:0.3s;
 }
 button:hover{
 scale:1.1;
+box-shadow: color(from color srgb r g b)
+}
+
+@media (max-width:480px){
+
+#app{
+width: 100vw;
+height: 100vh;
+border-radius: 0;
+}
+main{
+padding: 20px;
+}
+
 }
